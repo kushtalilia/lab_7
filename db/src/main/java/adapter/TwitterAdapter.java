@@ -1,16 +1,16 @@
 package adapter;
 
-import facebook.FacebookUser;
 import lombok.Setter;
+import twitter.TwitterUser;
 
 import java.util.Date;
 
 @Setter
-public class FacebookAdapter {
-    private FacebookUser user;
+public class TwitterAdapter implements User{
+    private TwitterUser user;
 
-    public FacebookAdapter(FacebookUser facebookUser) {
-        this.user = facebookUser;
+    public TwitterAdapter(TwitterUser twitterUser) {
+        this.user = twitterUser;
     }
 
     public String getEmail(){
